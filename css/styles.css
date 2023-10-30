@@ -35,7 +35,7 @@ a {
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  color: var(--IRIS);
+  color: var(--OCEAN);
   text-decoration: none;
   margin-right: 76px;
 }
@@ -67,6 +67,60 @@ a {
 .nav .list .link:focus,
 .nav .list .link:active {
   color: var(--OCEAN);
+}
+.nav-link-underline-homepage {
+  color: var(--OCEAN);
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  list-style: none;
+  text-transform: none;
+  font-weight: 500;
+  text-decoration: none;
+  display: flex;
+  gap: 40px;
+  flex-direction: row;
+  padding: 24px 0;
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-link-underline-homepage::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: var(--OCEAN);
+  border-radius: 2px;
+  width: 48px;
+}
+.nav-link-underline-portfolio {
+  color: var(--OCEAN);
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  list-style: none;
+  text-transform: none;
+  font-weight: 500;
+  text-decoration: none;
+  display: flex;
+  gap: 40px;
+  flex-direction: row;
+  padding: 24px 0;
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-link-underline-portfolio::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: var(--OCEAN);
+  border-radius: 2px;
+  width: 66px;
 }
 .address {
   font-style: normal;
@@ -430,7 +484,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-social-media-icons-link:hover,
 .team-social-media-icons-link:focus {
@@ -466,7 +520,8 @@ img {
   align-items: center;
   justify-content: center;
   color: #8e8f99;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-link:hover,
 .customers-link:focus {
